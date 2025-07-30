@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Flame, MapPin, Phone, Mail, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Flame, MapPin, Phone, Mail, Facebook, Instagram, Twitter, Youtube, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -16,18 +16,33 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-gray-300 mb-6 max-w-md">
-              Unleash your inner devil on the dance floor. Join Maharashtra's premier dance academy 
+              Unleash your inner devil on the dance floor. Join Maharashtra's premier dance academy
               for professional training in Hip Hop, Bollywood, Contemporary, and Salsa.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
+              <a
+                href="https://www.instagram.com/officialdragdevils/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-red-500 transition-colors"
+              >
                 <Instagram className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
-                <Twitter className="h-6 w-6" />
+              <a
+                href="https://www.youtube.com/channel/UCH7v2rW06FSNwh36X7rzQig"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-red-500 transition-colors"
+              >
+                <Youtube className="h-6 w-6" />
+              </a>
+              <a
+                href="https://wa.me/919503275557"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-red-500 transition-colors"
+              >
+                <MessageCircle className="h-6 w-6" />
               </a>
             </div>
           </div>
@@ -85,7 +100,7 @@ const Footer = () => {
 
         <div className="border-t border-red-900 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Drag Devils Dance Academy. All rights reserved.
+            © 2025 Drag Devils Dance Academy. All rights reserved.
           </p>
         </div>
       </div>

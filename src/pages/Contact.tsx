@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Clock, Send, Instagram, Facebook, Twitter } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send, Instagram, Facebook, Youtube, MessageCircle } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -50,6 +50,11 @@ const Contact = () => {
       content: 'info@dragdevils.com'
     },
     {
+      icon: MessageCircle,
+      title: 'WhatsApp',
+      content: 'https://wa.me/919503275557'
+    },
+    {
       icon: Clock,
       title: 'Hours',
       content: 'Mon-Sat: 6:00 AM - 10:00 PM\nSun: 8:00 AM - 6:00 PM'
@@ -57,9 +62,10 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: Instagram, href: 'https://www.instagram.com/officialdragdevils/', label: 'Instagram' },
     { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Twitter, href: '#', label: 'Twitter' }
+    { icon: Youtube, href: 'https://www.youtube.com/channel/UCH7v2rW06FSNwh36X7rzQig', label: 'YouTube' },
+    { icon: MessageCircle, href: 'https://wa.me/919503275557', label: 'WhatsApp' }
   ];
 
   return (
@@ -218,7 +224,18 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-white mb-2">{info.title}</h3>
-                      <p className="text-gray-300 whitespace-pre-line">{info.content}</p>
+                      {info.title === 'WhatsApp' ? (
+                        <a
+                          href={info.content}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-green-400 hover:underline"
+                        >
+                          <span>095032 75557</span>
+                        </a>
+                      ) : (
+                        <p className="text-gray-300 whitespace-pre-line">{info.content}</p>
+                      )}
                     </div>
                   </motion.div>
                 ))}
@@ -231,6 +248,8 @@ const Contact = () => {
                     <motion.a
                       key={social.label}
                       href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.1 }}
