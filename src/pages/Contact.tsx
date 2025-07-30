@@ -76,7 +76,7 @@ const Contact = () => {
               Get in <span className="text-red-500">Touch</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Ready to start your dance journey? Contact us today to book your first class 
+              Ready to start your dance journey? Contact us today to book your first class
               or learn more about our programs.
             </p>
           </motion.div>
@@ -199,7 +199,7 @@ const Contact = () => {
               <div>
                 <h2 className="text-3xl font-bold text-white mb-6">Contact Information</h2>
                 <p className="text-gray-300 mb-8">
-                  We'd love to hear from you! Whether you're a beginner looking to start your dance journey 
+                  We'd love to hear from you! Whether you're a beginner looking to start your dance journey
                   or an experienced dancer wanting to refine your skills, we're here to help.
                 </p>
               </div>
@@ -258,7 +258,7 @@ const Contact = () => {
               Visit Our Studio
             </h2>
             <p className="text-xl text-gray-300">
-              Located in the heart of Virar East, our studio is easily accessible and equipped 
+              Located in the heart of Virar East, our studio is easily accessible and equipped
               with state-of-the-art facilities.
             </p>
           </motion.div>
@@ -269,7 +269,7 @@ const Contact = () => {
             className="bg-black rounded-lg overflow-hidden shadow-2xl"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.3827833916754!2d72.79876731490108!3d19.456107986874863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7aec0b6c6d3c3%3A0x1c7b4c6d0a7b6c6d!2sVirar%20East%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1623456789012!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15048.919209547956!2d72.79823738715821!3d19.4456565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9b731cd7e47%3A0x81c0ace0e7dd39de!2sDrag%20devils%20academy%202!5e0!3m2!1sen!2sin!4v1752307702948!5m2!1sen!2sin"
               width="100%"
               height="450"
               style={{ border: 0 }}
@@ -293,7 +293,7 @@ const Contact = () => {
               Ready to Dance?
             </h2>
             <p className="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
-              Don't wait any longer to discover your passion for dance. 
+              Don't wait any longer to discover your passion for dance.
               Contact us today and let's unleash your inner devil together!
             </p>
             <a
